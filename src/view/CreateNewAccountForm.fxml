@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="403.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateNewAccountFormController">
+   <children>
+      <Label layoutX="110.0" layoutY="23.0" text="Create New Account" />
+      <Label layoutX="45.0" layoutY="94.0" text="User Name" />
+      <TextField fx:id="txtUsername" layoutX="45.0" layoutY="111.0" />
+      <Label layoutX="45.0" layoutY="151.0" prefHeight="17.0" prefWidth="52.0" text="E - Mail" />
+      <TextField fx:id="txtEmail" layoutX="45.0" layoutY="168.0" />
+      <Label layoutX="45.0" layoutY="214.0" text="New Password" />
+      <PasswordField fx:id="txtNewPassword" layoutX="45.0" layoutY="231.0" onAction="#txtNewPasswordOnAction" />
+      <Label layoutX="45.0" layoutY="276.0" text="Confirm Password" />
+      <PasswordField fx:id="txtConfirmPassword" layoutX="45.0" layoutY="293.0" onAction="#txtConfirmPasswordOnAction" />
+      <Button fx:id="btnRegister" layoutX="123.0" layoutY="338.0" mnemonicParsing="false" style="-fx-background-color: #27ae60;" text="Register" />
+      <Label fx:id="lblPasswordNotMached1" layoutX="127.0" layoutY="253.0" prefHeight="17.0" prefWidth="177.0" text="Password not mached" textFill="RED" />
+      <Label fx:id="lblPasswordNotMached2" layoutX="128.0" layoutY="316.0" prefHeight="17.0" prefWidth="177.0" text="Password not mached" textFill="RED" />
+      <Button layoutX="194.0" layoutY="57.0" mnemonicParsing="false" onAction="#AddNewUserOnAction" text="+ Add new User" />
+      <Label fx:id="lblUserID" layoutX="268.0" layoutY="86.0" text="User ID" />
+   </children>
+</AnchorPane>

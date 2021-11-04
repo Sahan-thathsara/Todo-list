@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ToDoFormController">
+   <children>
+      <ListView fx:id="lstToDo" layoutX="24.0" layoutY="17.0" prefHeight="360.0" prefWidth="247.0" />
+      <Label fx:id="lblTitle" layoutX="308.0" layoutY="17.0" text="Hi User, Welcome to To Do List" />
+      <Label fx:id="lblUser" layoutX="503.0" layoutY="17.0" text="U001" />
+      <TextField fx:id="txtSelected" layoutX="308.0" layoutY="54.0" prefHeight="25.0" prefWidth="239.0" />
+      <Button fx:id="btnDelete" layoutX="410.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #e74c3c;" text="Delete" />
+      <Button fx:id="btnUpdate" layoutX="479.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: #2ecc71;" text="Update" />
+      <Pane fx:id="subRoot" layoutX="308.0" layoutY="214.0" prefHeight="121.0" prefWidth="255.0">
+         <children>
+            <TextField fx:id="txtDescription" layoutX="24.0" layoutY="36.0" prefHeight="25.0" prefWidth="192.0" />
+            <Label layoutX="5.0" layoutY="14.0" text="Task Name" />
+            <Button layoutX="146.0" layoutY="82.0" mnemonicParsing="false" onAction="#btnAddToDoListOnAction" style="-fx-background-color: #2ecc71;" text="Add To Do List" />
+         </children>
+      </Pane>
+      <Button layoutX="308.0" layoutY="159.0" mnemonicParsing="false" onAction="#btnAddNewToDoOnAction" style="-fx-background-color: #3498db;" text="+ Add New To Do" />
+      <Button layoutX="317.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" style="-fx-background-color: #2ecc71;" text="Log Out" />
+      <ImageView fitHeight="65.0" fitWidth="122.0" layoutX="470.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ASPdotNET_logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
